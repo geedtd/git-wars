@@ -4,6 +4,7 @@ import Popular from './Components/Popular';
 import Battle from './Components/Battle';
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Nav from './Components/Nav';
+import Results from './Components/Results'
 
 
 class App extends React.Component {
@@ -32,6 +33,7 @@ class App extends React.Component {
             <Routes>
               <Route path='/' element={<Popular />}/>
               <Route path='/battle' element={<Battle />}/>
+              <Route path='/results' element={<Results/>}/>
             </Routes>
           </div>
         </div>
